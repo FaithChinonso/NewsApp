@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Paginated News</title>
+    <link rel="stylesheet" href="./styles//styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header id="header">News Blog</header>
+    <button id="add-news-btn">Add News</button>
+    <form id="news-form" style="display: none">
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required /><br /><br />
+      <label for="url">Url:</label>
+      <input type="text" id="url" name="url" required /><br /><br />
+      <label for="title">Title:</label>
+      <textarea id="title" name="title" required></textarea><br /><br />
+      <label for="avatar">Image:</label>
+      <input type="file" id="avatar" name="avatar" required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <form id="edit-form" style="display: none">
+      <label for="author-edit">Author:</label>
+      <input
+        type="text"
+        id="author-edit"
+        name="author-edit"
+        required
+      /><br /><br />
+      <label for="url-edit">Url:</label>
+      <input type="text" id="url-edit" name="url-edit" required /><br /><br />
+      <label for="title-edit">Title:</label>
+      <textarea id="title-edit" name="title-edit" required></textarea
+      ><br /><br />
+      <label for="avatar-edit">Image:</label>
+      <input
+        type="file"
+        id="avatar-edit"
+        name="avatar-edit"
+        required
+      /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="news-container"></div>
+
+    <div id="pagination-container">
+      <button id="back-btn" disabled>Back</button>
+      <button id="next-btn">Next</button>
+    </div>
+  </body>
+</html>

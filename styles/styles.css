@@ -1,0 +1,144 @@
+.news-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(204, 200, 200);
+  border-radius: 10px;
+}
+
+#pagination-container {
+  margin: 20px;
+}
+
+#back-btn {
+  margin-right: 20px;
+}
+#header {
+  padding: 30px 20px;
+  color: black;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(204, 200, 200);
+}
+#comment-header {
+  padding: 30px 20px;
+  color: black;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(204, 200, 200);
+}
+#news-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  padding: 30px;
+}
+.cover {
+  margin-top: 120px;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid rgb(204, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 450px;
+  position: relative;
+}
+.innerCover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.imageWrapper {
+  width: 250px;
+  height: 250px;
+}
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.addButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#edit-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#news-form {
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 10;
+  opacity: 1;
+}
+#news-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: 100vw;
+  padding: 40px;
+}
+
+#group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+#image-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid yellowgreen;
+}
+#news-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#news-title {
+  font-size: 14px;
+  color: rgb(49, 47, 47);
+  white-space: nowrap;
+}
+#news-author {
+  font-size: 18px;
+  color: rgb(49, 47, 47);
+  white-space: nowrap;
+  font-weight: 500;
+}
+#textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+#news-images {
+}
+#new-comments {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  justify-content: center;
+}
+button {
+  max-width: 120px;
+}
+@media (max-width: 600px) {
+  #news-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+
+    padding: 10px;
+  }
+}

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Single News</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./single-news.js" type="module"></script>
+  </head>
+  <body>
+    <div id="news-cover">
+      <div id="group">
+        <div id="image-wrapper">
+          <img src="" id="news-avatar" />
+        </div>
+        <div id="text-wrapper">
+          <h1 id="news-title"></h1>
+          <p id="news-author"></p>
+        </div>
+      </div>
+      <h1 id="header">Images</h1>
+      <div id="news-images"></div>
+      <button id="add-image-btn">Add Image</button>
+      <h1 id="comment-header">Comments</h1>
+      <div id="news-comments"></div>
+      <button id="add-comment-btn">Add Comment</button>
+
+      <form id="comment-form" style="display: none">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="message">Comment:</label>
+        <textarea id="message" name="message" required></textarea><br /><br />
+        <label for="avatar">Image:</label>
+        <input type="file" id="avatar" name="avatar" required /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+      <form id="image-form" style="display: none">
+        <label for="avatar-image">Image:</label>
+        <input
+          type="file"
+          id="avatar-image"
+          name="avatar"
+          required
+        /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
